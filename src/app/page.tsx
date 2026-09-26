@@ -259,8 +259,50 @@ export default function Home() {
                 />
                 <Field label="City" name="city" autoComplete="address-level2" maxLength={40} />
                 <div className="grid gap-5 sm:grid-cols-2">
-                  <Select label="Country" name="country_code" options={countryOptions} />
                   <Select label="State/Province" name="state_code" options={stateOptions} />
+                  <Select label="Country" name="country_code" options={countryOptions} />
+                </div>
+                <Field
+                  label="What's your LinkedIn profile URL?"
+                  name="00NQE00000bzmH1"
+                  type="url"
+                  autoComplete="url"
+                  maxLength={255}
+                />
+                <div className="grid gap-5 sm:grid-cols-2">
+                  <Select
+                    label="How have you used Claude before?"
+                    name="00NQE00000bzmSD"
+                    options={[
+                      { value: "Used for work", label: "Used for work" },
+                      { value: "Used personally", label: "Used personally" },
+                      { value: "Have not tried yet", label: "Have not tried yet" },
+                    ]}
+                  />
+                  <Select
+                    label="Have you used Claude Code?"
+                    name="00NQE00000bzmTp"
+                    options={[
+                      { value: "Yes", label: "Yes" },
+                      { value: "No", label: "No" },
+                      { value: "Not sure", label: "Not sure" },
+                    ]}
+                  />
+                </div>
+                <Checkbox
+                  label="Are you currently employed within the Salesforce ecosystem?"
+                  name="00NQE00000bzmLm"
+                />
+                <div>
+                  <label htmlFor="00NQE00000bzirf" className="block text-sm font-medium text-foreground">
+                    Tell us about your current role
+                  </label>
+                  <textarea
+                    id="00NQE00000bzirf"
+                    name="00NQE00000bzirf"
+                    rows={3}
+                    className="mt-1 w-full rounded-lg border border-black/10 px-3 py-2 text-foreground focus:border-pbc-blue focus:outline-none focus:ring-2 focus:ring-pbc-blue/30"
+                  />
                 </div>
                 <div>
                   <label htmlFor="description" className="block text-sm font-medium text-foreground">
@@ -354,5 +396,20 @@ function Select({
         ))}
       </select>
     </div>
+  );
+}
+
+function Checkbox({ label, name }: { label: string; name: string }) {
+  return (
+    <label htmlFor={name} className="flex items-center gap-2 text-sm font-medium text-foreground">
+      <input
+        id={name}
+        name={name}
+        type="checkbox"
+        value="1"
+        className="h-4 w-4 rounded border-black/20 text-pbc-orange focus:ring-pbc-blue/30"
+      />
+      {label}
+    </label>
   );
 }
