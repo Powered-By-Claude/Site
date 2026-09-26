@@ -89,8 +89,9 @@ export default function Home() {
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-foreground/70">
-              A mentorship program connecting you with experienced mentors to help you grow.
-              Register your interest below to be considered for the next intake.
+              A mentorship program for Salesforce professionals, connecting you with experienced
+              mentors to help you grow. Register your interest below to be considered for the
+              next intake.
             </p>
           </Reveal>
           <Reveal delay={0.2}>
