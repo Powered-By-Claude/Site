@@ -1,4 +1,4 @@
-// Generated from the Salesforce Web-to-Lead form HTML for The Handoff org.
+// Generated from the Salesforce Web-to-Lead form HTML for The Handover org.
 // Values must match Salesforce's picklist API values exactly.
 
 export const countryOptions = [

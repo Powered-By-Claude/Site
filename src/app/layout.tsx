@@ -15,9 +15,9 @@ const fredoka = Fredoka({
 });
 
 export const metadata: Metadata = {
-  title: "The Handoff — Mentorship Program for Salesforce Professionals",
+  title: "The Handover — Mentorship Program for Salesforce Professionals",
   description:
-    "Register your interest in The Handoff mentorship program for Salesforce professionals and see what to expect.",
+    "Register your interest in The Handover mentorship program for Salesforce professionals and see what to expect.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

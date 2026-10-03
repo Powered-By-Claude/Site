@@ -1,8 +1,8 @@
-# The Handoff — Site
+# The Handover — Site
 
-Landing page for The Handoff mentorship program: what to expect, meet the mentors, FAQ, and an expression-of-interest form.
+Landing page for The Handover mentorship program: what to expect, meet the mentors, FAQ, and an expression-of-interest form.
 
-Live at [the-handoff.github.io/Site](https://the-handoff.github.io/Site/).
+Live at [the-handover.github.io/Site](https://the-handover.github.io/Site/).
 
 ## Development
 
