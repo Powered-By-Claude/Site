@@ -1,8 +1,8 @@
-# Powered by Claude — Site
+# The Handoff — Site
 
-Landing page for the Powered by Claude mentorship program: what to expect, meet the mentors, FAQ, and an expression-of-interest form.
+Landing page for The Handoff mentorship program: what to expect, meet the mentors, FAQ, and an expression-of-interest form.
 
-Live at [powered-by-claude.github.io/Site](https://powered-by-claude.github.io/Site/).
+Live at [the-handoff.github.io/Site](https://the-handoff.github.io/Site/).
 
 ## Development
 

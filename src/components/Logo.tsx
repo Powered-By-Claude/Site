@@ -5,7 +5,7 @@ export function Logo({ className = "" }: { className?: string }) {
   return (
     <Image
       src={logo}
-      alt="Powered by Claude"
+      alt="The Handoff"
       className={className}
       priority
     />

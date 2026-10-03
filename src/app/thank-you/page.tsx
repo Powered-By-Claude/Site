@@ -8,7 +8,7 @@ export default function ThankYou() {
       </h1>
       <p className="mt-4 max-w-md text-foreground/70">
         We&apos;ve received your details and will be in touch about next steps for the
-        Powered by Claude mentorship program.
+        The Handoff mentorship program.
       </p>
       <Link
         href="/"

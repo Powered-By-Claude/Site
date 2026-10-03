@@ -4,6 +4,7 @@ import { Reveal } from "@/components/Reveal";
 import miaPhoto from "@/assets/mentors/mia.jpg";
 import tanyaPhoto from "@/assets/mentors/tanya.jpg";
 import miaAndTanyaPhoto from "@/assets/mentors/mia-and-tanya.jpg";
+import wordmark from "@/assets/wordmark.png";
 import { countryOptions, stateOptions } from "@/data/salesforceLeadOptions";
 
 const expectations = [
@@ -29,7 +30,7 @@ const mentors = [
   {
     name: "Mia",
     photo: miaPhoto,
-    bio: "One half of the Powered by Claude mentor duo — hands-on with Claude every day and focused on turning it into real, practical efficiency gains.",
+    bio: "One half of The Handoff mentor duo — hands-on with Claude every day and focused on turning it into real, practical efficiency gains.",
   },
   {
     name: "Tanya",
@@ -42,7 +43,7 @@ const faqs = [
   {
     question: "Is there a cost to join?",
     answer:
-      "No — the Powered by Claude mentorship program is completely free.",
+      "No — The Handoff mentorship program is completely free.",
   },
   {
     question: "How big is each cohort?",
@@ -70,9 +71,7 @@ export default function Home() {
     <div className="flex flex-1 flex-col">
       <header className="sticky top-0 z-10 border-b border-black/5 bg-white/90 backdrop-blur">
         <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-          <span className="font-display text-lg font-semibold text-foreground">
-            Powered by Claude
-          </span>
+          <Image src={wordmark} alt="The Handoff" className="h-8 w-auto" priority />
           <a
             href="#apply"
             className="rounded-full bg-pbc-orange px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-pbc-orange-dark"
@@ -145,7 +144,7 @@ export default function Home() {
             <Reveal delay={0.1} className="mt-10">
               <Image
                 src={miaAndTanyaPhoto}
-                alt="Mia and Tanya, Powered by Claude mentors"
+                alt="Mia and Tanya, The Handoff mentors"
                 className="mx-auto rounded-3xl shadow-md"
                 sizes="(min-width: 768px) 700px, 100vw"
                 priority={false}
@@ -212,7 +211,7 @@ export default function Home() {
 
             {/*
               Salesforce Web-to-Lead form, matching the HTML generated from
-              Setup -> Web-to-Lead for the Powered by Claude org (oid
+              Setup -> Web-to-Lead for The Handoff org (oid
               00DQE00000FXBNR). Field set, maxlengths, and the lead_source
               value ("Web") are copied verbatim from that generated form —
               lead_source in particular must stay "Web" since LeadSource is a
@@ -229,7 +228,7 @@ export default function Home() {
                 <input
                   type="hidden"
                   name="retURL"
-                  value="https://powered-by-claude.github.io/Site/thank-you/"
+                  value="https://the-handoff.github.io/Site/thank-you/"
                 />
                 <input type="hidden" name="lead_source" value="Web" />
 
@@ -329,7 +328,7 @@ export default function Home() {
       </main>
 
       <footer className="border-t border-black/5 px-6 py-8 text-center text-sm text-foreground/50">
-        Powered by Claude — {new Date().getFullYear()}
+        The Handoff — {new Date().getFullYear()}
       </footer>
     </div>
   );
