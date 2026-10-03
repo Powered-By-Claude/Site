@@ -4,6 +4,7 @@ import { Reveal } from "@/components/Reveal";
 import miaPhoto from "@/assets/mentors/mia.jpg";
 import tanyaPhoto from "@/assets/mentors/tanya.jpg";
 import miaAndTanyaPhoto from "@/assets/mentors/mia-and-tanya.jpg";
+import wordmark from "@/assets/brand/the-handover-cropped-transparent.png";
 import { countryOptions, stateOptions } from "@/data/salesforceLeadOptions";
 
 const expectations = [
@@ -70,9 +71,7 @@ export default function Home() {
     <div className="flex flex-1 flex-col">
       <header className="sticky top-0 z-10 border-b border-black/5 bg-white/90 backdrop-blur">
         <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-          <span className="font-display text-lg font-semibold text-foreground">
-            The Handover
-          </span>
+          <Image src={wordmark} alt="The Handover" className="h-8 w-auto" priority />
           <a
             href="#apply"
             className="rounded-full bg-pbc-orange px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-pbc-orange-dark"
